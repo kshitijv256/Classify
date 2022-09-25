@@ -22,7 +22,6 @@ class _EditClassTState extends State<EditClassT> {
     String batch = teach_class_data[widget.day]![widget.index][2];
     String note = teach_class_data[widget.day]![widget.index][3];
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Edit Class'),
       ),
