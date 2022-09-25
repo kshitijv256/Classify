@@ -1,16 +1,34 @@
-# classify
+<p align="center"><img src = "https://github.com/kshitijv256/Classify/blob/main/assets/icons/icon.png"><h1 align="center">Classify</h1></p1>
 
-A new Flutter project.
+> <i> Managing classes made easy, for both teachers and students</i>
+<br>
 
-## Getting Started
+## Inspiration
 
-This project is a starting point for a Flutter application.
+As a university student, I often forget which classes are today and what was work assigned in those classes, and if the teacher asked for something or gave some instruction for the next class.
 
-A few resources to get you started if this is your first Flutter project:
+I noticed this is not a problem specific to students, teachers sometimes also face these kinds of problems like up to what lecture they are in various classes and what are their plans for the next class.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This inspired me to make an App that can help solve this issue.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## What it does
+
+#### This is a simple app but has many features:
+
+- Edit classes details once and the app will show today's class schedule daily
+- I added days to be Monday to Friday so on Saturday and Sunday it will still show Monday
+- User change weekday using simple buttons to access previous class details or add upcoming class details
+- User can add class time, room/building, class, and a note regarding that class to keep track of
+- A list to add your to-do's
+- Clicking on add button at the bottom opens a form to add new task
+- User can add a title and a small description for the task
+- The tasks are stored permanently to data will retain even after closing the session
+- Delete a task if completed from the list by swiping that task to left
+
+## Installation Instructions
+> Download Apk from here
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/kshitijv256/Classify/raw/main/tryapp/classify.apk"><img src="https://img.shields.io/badge/Download-blue?&style=flat&logo=github&logoColor=white" /></a></p>
+
+- Install apk
+- Open app for 1st time, if it shows a white background in place of classes close the app and remove from recent apps
+- Restart app, it will work properly now.
