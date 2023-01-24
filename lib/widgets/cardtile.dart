@@ -15,6 +15,7 @@ class CardList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('$day');
     return Flexible(
       child: ListView.builder(
         itemCount: data['$day']!.length,
