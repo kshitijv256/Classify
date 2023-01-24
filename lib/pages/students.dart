@@ -1,28 +1,29 @@
-import 'package:classify/controllers/list_controller_t.dart';
+import 'package:classify/controllers/list_controller_s.dart';
 import 'package:classify/widgets/MyCircles.dart';
 import 'package:classify/widgets/cardtile.dart';
+import 'package:classify/widgets/studentTile.dart';
 import 'package:classify/widgets/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 var day = DateTime.now().weekday;
 
-class Classes extends StatefulWidget {
-  const Classes({Key? key}) : super(key: key);
-  final themeid = 3;
+class StudentClasses extends StatefulWidget {
+  const StudentClasses({Key? key}) : super(key: key);
+  final themeid = 4;
 
   @override
-  State<Classes> createState() => _ClassesState();
+  State<StudentClasses> createState() => _StudentClassesState();
 }
 
-class _ClassesState extends State<Classes> {
+class _StudentClassesState extends State<StudentClasses> {
   @override
   Widget build(BuildContext context) {
     // widget.storage.findpath().then((value) => path = value);
     (day <= 0) ? day = 5 : day = day;
     // (time > 16) ? day += 1 : day;
     (day > 5) ? day = 1 : day;
-    return Consumer<ListController>(
+    return Consumer<ListControllerSt>(
       builder: (context, listController, child) {
         return Container(
           color: Color.fromARGB(255, 30, 25, 51),
@@ -74,7 +75,7 @@ class _ClassesState extends State<Classes> {
                   ],
                 ),
               ),
-              CardList(widget: widget, data: listController.classItems),
+              StudentTile(widget: widget, data: listController.classItems),
             ],
           ),
         );

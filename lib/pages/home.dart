@@ -1,3 +1,4 @@
+import 'package:classify/pages/students.dart';
 import 'package:classify/widgets/student.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -14,12 +15,14 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final pages = {
-    1: const Classes(),
-    2: const MyList(),
+    1: const StudentClasses(),
+    2: const Classes(),
+    3: const MyList(),
   };
   final themes = {
     1: 4,
-    2: 1,
+    2: 3,
+    3: 0,
   };
   int pageid = 1;
 
@@ -53,11 +56,22 @@ class _HomePageState extends State<HomePage> {
               tabs: [
                 GButton(
                   icon: Icons.schedule_rounded,
-                  text: "Schedule",
+                  text: "Student",
                   onPressed: () => {
                     setState(
                       () {
                         pageid = 1;
+                      },
+                    )
+                  },
+                ),
+                GButton(
+                  icon: Icons.schedule_rounded,
+                  text: "Teachers",
+                  onPressed: () => {
+                    setState(
+                      () {
+                        pageid = 2;
                       },
                     )
                   },
@@ -68,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () => {
                     setState(
                       () {
-                        pageid = 2;
+                        pageid = 3;
                       },
                     )
                   },
@@ -79,12 +93,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-                  // DefaultTextStyle(
-                  //   child: Text('ABCD'),
-                  //   style: TextStyle(
-                  //     fontSize: 40,
-                  //     color: Colors.white,
-                  //     fontWeight: FontWeight.bold,
-                  //   ),
-                  // ),
