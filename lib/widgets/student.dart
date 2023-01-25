@@ -5,40 +5,39 @@ import 'package:path_provider/path_provider.dart';
 class StudentStorage {
   var mydata = {
     "1": [
-      ["ESP & SDP", "9:30 - 10:30", "Ankit Kumar Sharma", ""],
-      ["JAVA // DBMS LAB", "10:30 - 12:30", "Uma Devi"],
-      ["AUTOMATA", "1:30 - 2:30", "Sagarika Ghosh"],
-      ["DBMS", "2:30 - 3:30", "Jyoti Anand"],
-      ["INDIAN CONSTITUTION", "3:30 - 4:30", "Vivek Kumar Sharma"]
+      ["GSC606", "9:30 - 10:30", "AKM", ""],
+      ["CN LAB // Complier Design LAB", "10:30 - 12:30", "JAD/PKB", ""],
+      ["DL & NN", "1:30 - 2:30", "SGH", ""],
+      ["Big Data", "2:30 - 3:30", "UDI", ""],
+      ["OR & NM", "3:30 - 4:30", "PMK", ""]
     ],
     "2": [
-      ["ARTIFICIAL INTELLIGENCE", "9:30 - 10:30", "Rupayan Das", ""],
-      ["MANAGEMENT", "10:30 - 11:30", "K.V.Kuriakose", ""],
-      ["SOFTWARE ENGINEERING", "11:30 - 12:30", "Mrinal Kanti Sarkar", ""],
-      ["ALL IN ONE", "1:30 - 2:30", "Vivek Kumar Sharma", ""],
-      ["DBMS // JAVA LAB", "2:30 - 4:30", "Jyoti Anand", ""]
+      ["CN", "9:30 - 10:30", "JAD", ""],
+      ["DL & NN", "10:30 - 11:30", "SGH", ""],
+      ["Graphics", "11:30 - 12:30", "JKL", ""],
+      ["GSC606", "1:30 - 2:30", "VKS", ""],
+      ["Complier Design LAB // CN LAB", "2:30 - 4:30", "PKB/JAD", ""]
     ],
     "3": [
-      ["DBMS", "9:30 - 10:30", "Jyoti Anand", ""],
-      ["AUTOMATA", "10:30 - 11:30", "Sagarika Ghosh", ""],
-      ["MANAGEMENT", "11:30 - 12:30", "K.V.Kuriakose", ""],
-      ["JAVA", "1:30 - 2:30", "Uma Devi", ""],
-      ["AIML // SWE LAB", "2:30 - 4:30", "Rupayan Das", ""]
+      ["Compiler Design", "9:30 - 10:30", "PKB", ""],
+      ["CN", "10:30 - 11:30", "JAD", ""],
+      ["Big Data", "11:30 - 12:30", "UDI", ""],
+      ["Compiler Design", "1:30 - 2:30", "PKB", ""],
+      ["DL && NN LAB // Big Data LAB", "2:30 - 4:30", "SGH/UDI", ""]
     ],
     "4": [
-      ["SOFTWARE ENGINEERING", "9:30 - 10:30", "Mrinal Kanti Sarkar", ""],
-      ["SWE // AIML LAB", "10:30 - 12:30", "Subrat Gautam", ""],
-      ["ARTIFICIAL INTELLIGENCE", "1:30 - 2:30", "Rupayan Das", ""],
-      ["JAVA", "2:30 - 3:30", "Uma Devi", ""],
-      ["ENGLISH", "3:30 - 4:30", "Mr. Gourab Goswami", ""]
+      ["OR & NM", "9:30 - 10:30", "PMK", ""],
+      ["Big Data LAB // DL && NN LAB", "10:30 - 12:30", "UDI/SGH", ""],
+      ["Grahics", "1:30 - 2:30", "JKL", ""],
+      ["Big Data", "2:30 - 3:30", "UDI", ""],
+      ["GSC606", "3:30 - 4:30", "DJK", ""]
     ],
     "5": [
-      ["DBMS", "9:30 - 10:30", "Jyoti Anand", ""],
-      ["AUTOMATA", "10:30 - 11:30", "Sagarika Ghosh", ""],
-      ["JAVA", "11:30 - 12:30", "Uma Devi", ""],
-      ["SOFTWARE ENGINEERING", "1:30 - 2:30", "Subrat Gautam", ""],
-      ["ARTIFICIAL INTELLIGENCE", "2:30 - 3:30", "Rupayan Das", ""],
-      ["PROJECT GUIDE", "3:30 - 4:30", "MENTOR", ""]
+      ["DL & NN", "9:30 - 10:30", "SGH", ""],
+      ["CN", "10:30 - 11:30", "JAD", ""],
+      ["Compiler Design", "11:30 - 12:30", "PKB", ""],
+      ["OR && NM", "1:30 - 2:30", "PMK", ""],
+      ["Computer Graphics LAB", "2:30 - 4:30", "DCE/JKL", ""]
     ]
   };
   Future<String> get _localPath async {
